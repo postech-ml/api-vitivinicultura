@@ -11,7 +11,7 @@ class Processamento:
         resposta.raise_for_status()  # Lança um erro para respostas não bem-sucedidas
         #dados = pd.read_csv(StringIO(resposta.text))  # Modifique esta linha
         dados = pd.read_csv(StringIO(resposta.text), sep="\t")
-        dados.to_clipboard()
+        #dados.to_clipboard()
        
         resultado_final_= dados.to_json(orient="records")
         return json.loads(resultado_final_)
