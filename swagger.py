@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_restplus import Api
+from flask_restx import Api
 from rotas_processamento import RotasProcessamento
 
 class Swagger:

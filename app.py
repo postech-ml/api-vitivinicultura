@@ -2,7 +2,7 @@ from flask import Flask
 from swagger import Swagger
 from token_generator import TokenGenerator
 from rotas_processamento import RotasProcessamento
-
+from werkzeug.utils import cached_property
 
 app = Flask(__name__)
 
