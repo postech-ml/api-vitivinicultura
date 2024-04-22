@@ -1,9 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_jwt_extended import JWTManager, create_access_token
 
-#tk = Flask(__name__)
-#tk.config['JWT_SECRET_KEY'] = 'super-secret'  # Change this!
-#jwt = JWTManager(tk)
+
 
 
 class TokenGenerator:
@@ -22,5 +20,3 @@ class TokenGenerator:
         else:
             return jsonify(message='Usuário ou senha inválidos'), 401
 
-#if __name__ == "__main__":
-    #tk.run(debug=True)
