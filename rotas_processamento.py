@@ -3,6 +3,8 @@ from flask_restx import Namespace, Resource
 from flask_jwt_extended import jwt_required
 from processamento import Processamento
 
+api = Namespace('processamento', description='Operações de processamento')
+
 class ProcessaMesa(Resource):
     @api.doc('processa_mesa')
     @api.response(200, 'Sucesso')
